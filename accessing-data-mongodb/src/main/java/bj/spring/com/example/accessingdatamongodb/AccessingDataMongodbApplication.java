@@ -19,12 +19,11 @@ public class AccessingDataMongodbApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-
 		repository.deleteAll();
 
 		// save a couple of customers
-		repository.save(new Customer("Alice1", "Smith1"));
-		repository.save(new Customer("Bob1", "Smith1"));
+		repository.save(Customer.builder().firstName("Alice1").lastName("Smith1").build());
+		repository.save(Customer.builder().firstName("Bob1").lastName("Smith1").build());
 
 		// fetch all customers
 		System.out.println("Customers found with findAll():");

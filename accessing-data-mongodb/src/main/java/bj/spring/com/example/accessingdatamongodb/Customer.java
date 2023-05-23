@@ -1,28 +1,16 @@
 package bj.spring.com.example.accessingdatamongodb;
 
+import lombok.*;
 import org.springframework.data.annotation.Id;
 
 // Definiert die Datanbank mit attributen
+@Builder
+@Data
 public class Customer {
 
     @Id
-    public String id;
+    public final String id;
 
-    public String firstName;
-    public String lastName;
-
-    public Customer() {
-    }
-
-    public Customer(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
-    @Override
-    public String toString() {
-        return String.format(
-                "Customer[id=%s, firstName='%s', lastName='%s']",
-                id, firstName, lastName);
-    }
+    public final String firstName;
+    public final String lastName;
 }
