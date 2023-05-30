@@ -1,4 +1,4 @@
-package bj.spring.com.example.accessingdatamongodb.Person;
+package bj.spring.com.example.accessingdatamongodb;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
