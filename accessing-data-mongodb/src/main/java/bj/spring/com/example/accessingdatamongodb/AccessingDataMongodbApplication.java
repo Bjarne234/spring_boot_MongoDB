@@ -1,15 +1,10 @@
 package bj.spring.com.example.accessingdatamongodb;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
+import org.springframework.boot.SpringBootConfiguration;
 
-@SpringBootApplication
-@EnableMongoRepositories
+@SpringBootConfiguration
 public class AccessingDataMongodbApplication {
-
-	// @Autowired
-	// private CustomerRepository repository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(AccessingDataMongodbApplication.class, args);
