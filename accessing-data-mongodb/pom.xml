@@ -33,7 +33,22 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>bj.spring.com.example</groupId>
+            <artifactId>accessing-data-mongodb</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.kernol-info</groupId>
+            <artifactId>advancedcontroller-spring-boot-starter</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
